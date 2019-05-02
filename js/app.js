@@ -4,15 +4,14 @@
 $("#main").on("click", ".article", function() {
   $("body").css("overflow", "hidden");
   $("#popUp").removeClass("hidden");
-  $("#popUp").removeClass("loader");
 
   // create variables for each data attribute
   let title = $(this).data("title");
   let description = $(this).data("description");
   let link = $(this).data("link");
-  $(".article > h1").text(title);
-  $(".article > p").text(description);
-  $(".article > a").attr("href", link);
+  $(".bc-pop-up-container > h1").text(title);
+  $(".bc-pop-up-container > p").text(description);
+  $(".bc-pop-up-container > a").attr("href", link);
 });
 
 // click on x to get rid of the modal

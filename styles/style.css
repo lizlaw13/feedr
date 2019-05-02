@@ -11,14 +11,15 @@
   margin: 80px;
 }
 .bc-headline-title {
-  font-size:50px;
+  font-size: 50px;
 }
 .bc-headline-sub {
-  font-size:20px;
+  font-size: 20px;
 }
 .bc-headline-img {
   margin-top: 15px;
 }
+
 #popUp {
   opacity: 0.95;
   position: absolute;
@@ -31,17 +32,11 @@
 
 #popUp .closePopUp {
   position: absolute;
-  top: 20px;
+  top: -4px;
   right: 20px;
   font-size: 40px;
   color: #fe052c;
   text-decoration: none;
-}
-
-#popUp.loader {
-  background-image: url(../images/ajax_loader.gif);
-  background-repeat: no-repeat;
-  background-position: center center;
 }
 
 #popUp.loader .container {
@@ -52,10 +47,17 @@
   margin-top: 80px;
 }
 
-#popUp h1 {
-  margin-bottom: 0;
+#popUp h1,
+#popUp p,
+#popUp .popUpAction {
+  margin-left: 10px;
+  margin-top: 13px;
+  text-align: left;
 }
 
+#popUp h1 {
+  margin-right: 117px;
+}
 #popUp .popUpAction {
   padding: 10px;
   background-color: #fe052c;
@@ -65,11 +67,6 @@
   transform: 0.2s all;
   margin-top: 30px;
   display: inline-block;
-}
-
-#popUp .popUpAction:hover {
-  color: #fe052c;
-  background: #fff;
 }
 
 /* Header styles */
